@@ -1,0 +1,38 @@
+{
+  "name": "aperdigao/buscador-cursos-alura",
+  "description": "Projeto que busca os cursos no site da Alura",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "alexperdigao",
+      "email": "alexfperdigao@gmail.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.9",
+    "symfony/dom-crawler": "^7.1",
+    "symfony/css-selector": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Alura\\BuscadorDeCursos\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phan/phan": "^5.4"
+  },
+  "scripts": {
+    "test": "phpunit tests\\TestBuscadorDeCursos.php",
+    "cs": "phpcs --standard=PSR12 src/",
+    "phan": "phan Buscador.php",
+    "check": [
+      "@phan",
+      "@cs",
+      "@test"
+    ]
+  },
+  "scripts-descriptions": {
+    "check": "Roda as verificações do código. PHAN, PHPCS e PHPUNIT"
+  }
+}

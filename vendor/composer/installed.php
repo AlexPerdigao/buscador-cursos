@@ -1,21 +1,30 @@
 <?php return array(
     'root' => array(
-        'name' => 'aperdigao/buscador-cursos-alura',
+        'name' => 'aleperdigao/buscador-cursos-alura',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '915976c2410834dc8e7989af29952b49c6a676df',
+        'reference' => 'd0204b19afd1c2b91a8c7b919be143be589509ca',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'aperdigao/buscador-cursos-alura' => array(
+        'aleperdigao/buscador-cursos-alura' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '915976c2410834dc8e7989af29952b49c6a676df',
+            'reference' => 'd0204b19afd1c2b91a8c7b919be143be589509ca',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'aperdigao/buscador-cursos-alura' => array(
+            'pretty_version' => 'v1.0.0',
+            'version' => '1.0.0.0',
+            'reference' => 'd0204b19afd1c2b91a8c7b919be143be589509ca',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../aperdigao/buscador-cursos-alura',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

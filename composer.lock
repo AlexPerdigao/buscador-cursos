@@ -4,8 +4,53 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93e655f8ec204619fefac8273f37a493",
+    "content-hash": "cd29b6faf154c58692a11c9ae7315d1e",
     "packages": [
+        {
+            "name": "aperdigao/buscador-cursos-alura",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AlexPerdigao/buscador-cursos.git",
+                "reference": "d0204b19afd1c2b91a8c7b919be143be589509ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AlexPerdigao/buscador-cursos/zipball/d0204b19afd1c2b91a8c7b919be143be589509ca",
+                "reference": "d0204b19afd1c2b91a8c7b919be143be589509ca",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.9",
+                "symfony/css-selector": "^7.1",
+                "symfony/dom-crawler": "^7.1"
+            },
+            "require-dev": {
+                "phan/phan": "^5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Alura\\BuscadorDeCursos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "alexperdigao",
+                    "email": "alexfperdigao@gmail.com"
+                }
+            ],
+            "description": "Projeto que busca os cursos no site da Alura",
+            "support": {
+                "issues": "https://github.com/AlexPerdigao/buscador-cursos/issues",
+                "source": "https://github.com/AlexPerdigao/buscador-cursos/tree/v1.0.0"
+            },
+            "time": "2024-08-26T17:34:28+00:00"
+        },
         {
             "name": "guzzlehttp/guzzle",
             "version": "7.9.2",

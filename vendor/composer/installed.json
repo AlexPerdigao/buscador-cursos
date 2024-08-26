@@ -1,6 +1,54 @@
 {
     "packages": [
         {
+            "name": "aperdigao/buscador-cursos-alura",
+            "version": "v1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AlexPerdigao/buscador-cursos.git",
+                "reference": "d0204b19afd1c2b91a8c7b919be143be589509ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AlexPerdigao/buscador-cursos/zipball/d0204b19afd1c2b91a8c7b919be143be589509ca",
+                "reference": "d0204b19afd1c2b91a8c7b919be143be589509ca",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.9",
+                "symfony/css-selector": "^7.1",
+                "symfony/dom-crawler": "^7.1"
+            },
+            "require-dev": {
+                "phan/phan": "^5.4"
+            },
+            "time": "2024-08-26T17:34:28+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Alura\\BuscadorDeCursos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "alexperdigao",
+                    "email": "alexfperdigao@gmail.com"
+                }
+            ],
+            "description": "Projeto que busca os cursos no site da Alura",
+            "support": {
+                "issues": "https://github.com/AlexPerdigao/buscador-cursos/issues",
+                "source": "https://github.com/AlexPerdigao/buscador-cursos/tree/v1.0.0"
+            },
+            "install-path": "../aperdigao/buscador-cursos-alura"
+        },
+        {
             "name": "composer/pcre",
             "version": "3.3.0",
             "version_normalized": "3.3.0.0",

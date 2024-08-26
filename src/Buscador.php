@@ -3,6 +3,7 @@
 namespace Alura\BuscadorDeCursos;
 
 use GuzzleHttp\ClientInterface;
+use GuzzleHttp\Exception\GuzzleException;
 use http\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
@@ -11,11 +12,11 @@ class Buscador
     /**
      * @var ClientInterface
      */
-    private $httpClient;
+    private ClientInterface $httpClient;
     /**
      * @var Crawler
      */
-    private $crawler;
+    private Crawler $crawler;
 
     public function __construct(ClientInterface $httpClient, Crawler $crawler)
 {
@@ -26,8 +27,9 @@ class Buscador
 
     /**
      * @return Crawler
+     * @throws GuzzleException
      */
-    public function buscar(string $url) : array
+    public function buscarCurso(string $url) : array
     {
         $resposta = $this->httpClient->request('GET', $url);
 

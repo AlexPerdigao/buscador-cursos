@@ -11,7 +11,7 @@
     "guzzlehttp/guzzle": "^7.9",
     "symfony/dom-crawler": "^7.1",
     "symfony/css-selector": "^7.1",
-    "aleperdigao/buscador-cursos-alura": "^1.0"
+    "aperdigao/buscador-cursos-alura": "^1.0"
   },
   "autoload": {
     "psr-4": {
